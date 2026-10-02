@@ -1,0 +1,144 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to right, #39a9c8, #61d5aa, #91e84d);
+    color: black;
+}
+
+header {
+    background: white;
+    text-align: center;
+    padding: 20px;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 28px;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 5px;
+    background: #7ed957;
+    padding: 10px;
+}
+
+nav a {
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 8px 10px;
+}
+
+nav a:hover {
+    background: white;
+}
+
+.other-page {
+    padding: 30px 45px 40px 45px;
+}
+
+.other-top {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 25px;
+}
+
+.other-section {
+    background: rgba(255, 255, 255, 0.9);
+    border: 1px solid #777;
+    padding: 22px;
+    min-height: 220px;
+    box-sizing: border-box;
+}
+
+.other-section h2 {
+    margin-top: 0;
+    font-size: 20px;
+}
+
+.other-section p {
+    line-height: 1.6;
+}
+
+.other-section ul {
+    padding-left: 20px;
+}
+
+.other-section li {
+    margin-bottom: 10px;
+}
+
+.other-bottom {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 25px;
+    margin-top: 25px;
+}
+
+.other-text {
+    background: rgba(255, 255, 255, 0.9);
+    border: 1px solid #777;
+    padding: 22px;
+    min-height: 220px;
+    box-sizing: border-box;
+}
+
+.other-text h2 {
+    margin-top: 0;
+    font-size: 20px;
+}
+
+.other-text p {
+    line-height: 1.6;
+}
+
+.other-image {
+    background: white;
+    border: 1px solid #777;
+    height: 220px;
+    overflow: hidden;
+}
+
+.other-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+footer {
+    background: white;
+    text-align: center;
+    padding: 12px;
+}
+
+footer p {
+    margin: 0;
+}
+
+@media screen and (max-width: 900px) {
+    .other-top {
+        grid-template-columns: 1fr;
+    }
+
+    .other-bottom {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    nav {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .other-page {
+        padding: 20px;
+    }
+}
+
+
