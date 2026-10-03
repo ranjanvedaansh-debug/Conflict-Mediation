@@ -31,6 +31,13 @@ audio.addEventListener("loadedmetadata", function() {
     durationDisplay.textContent = formatTime(audio.duration);
 });
 
+audio.addEventListener("durationchange", function() {
+    if (Number.isFinite(audio.duration)) {
+        progressBar.max = audio.duration;
+        durationDisplay.textContent = formatTime(audio.duration);
+    }
+});
+
 audio.addEventListener("timeupdate", function() {
     progressBar.value = audio.currentTime;
     currentTimeDisplay.textContent = formatTime(audio.currentTime);
