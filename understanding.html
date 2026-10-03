@@ -153,6 +153,38 @@
                 alt="People working together">
 
         </div>
+		
+		<div class="music-player">
+
+    <audio id="audio" src="understandingconlifct.mp3"></audio>
+
+    <div class="player-controls">
+
+        <button id="backward" type="button">⏪</button>
+
+        <button id="play-button" type="button">▶</button>
+
+        <button id="forward" type="button">⏩</button>
+
+    </div>
+
+    <div class="player-timeline">
+
+        <span id="current-time">0:00</span>
+
+        <input
+            type="range"
+            id="progress-bar"
+            min="0"
+            max="100"
+            value="0"
+        >
+
+        <span id="duration">0:00</span>
+
+    </div>
+
+</div>
 
     </section>
 
@@ -164,7 +196,7 @@
     <p>Conflict Resolution</p>
 
 </footer>
-
+<script src="audio-player.js"></script>
 </body>
 </html>
 
