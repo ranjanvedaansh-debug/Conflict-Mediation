@@ -120,6 +120,7 @@ footer p {
         padding: 10px 20px 20px 20px;
     }
 }
+
 .music-player {
     width: 430px;
     background: white;
@@ -127,6 +128,7 @@ footer p {
     padding: 15px 18px;
     box-sizing: border-box;
     margin: 0 auto 30px auto;
+    display: block;
 }
 
 .player-controls {
@@ -183,6 +185,6 @@ footer p {
     .music-player {
         width: calc(100% - 40px);
         margin: 0 20px 20px 20px;
+        display: block;
     }
 }
-
